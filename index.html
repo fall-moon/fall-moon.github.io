@@ -238,6 +238,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/anaconda%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/anaconda%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/" itemprop="url">annaconda环境迁移和tensorflow2.0-gpu安装</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-11T13:20:27+08:00">
+                2019-11-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index">
+                    <span itemprop="name">环境搭建</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="环境备份"><a href="#环境备份" class="headerlink" title="环境备份"></a>环境备份</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br><span class="line">activate [env_name]</span><br><span class="line">conda env export --file [file_name]</span><br></pre></td></tr></table></figure>
+
+<p>环境导入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env create -f [file_path]</span><br></pre></td></tr></table></figure>
+
+<p>产生错误not found</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">intel-openmp=2019.5=281</span><br></pre></td></tr></table></figure>
+
+<p>在yml文件中删除对应描述继续安装即可</p>
+<h3 id="环境创建"><a href="#环境创建" class="headerlink" title="环境创建"></a>环境创建</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n [env_name] &lt;python=3.5&gt;</span><br></pre></td></tr></table></figure>
+
+<p>python=3.5为具体包版本指定</p>
+<h3 id="tensorflow2-0安装"><a href="#tensorflow2-0安装" class="headerlink" title="tensorflow2.0安装"></a>tensorflow2.0安装</h3><p>安装参考网站：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://tensorflow.google.cn/install/gpu</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载显卡驱动程序"><a href="#下载显卡驱动程序" class="headerlink" title="下载显卡驱动程序"></a>下载显卡驱动程序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.nvidia.com/Download/index.aspx?lang=cn</span><br></pre></td></tr></table></figure>
+
+<p>对应显卡版本为1660Ti，下载DCH的STUDIO版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://cn.download.nvidia.com/Windows/441.12/441.12-desktop-win10-64bit-international-nsd-dch-whql.exe</span><br></pre></td></tr></table></figure>
+
+<h4 id="下载CUDA："><a href="#下载CUDA：" class="headerlink" title="下载CUDA："></a>下载CUDA：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/cuda-toolkit-archive</span><br></pre></td></tr></table></figure>
+
+<p>下载CUDNN：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/rdp/cudnn-download</span><br></pre></td></tr></table></figure>
+
+<p>选择windows10版本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.0_20191031/cudnn-10.0-windows10-x64-v7.6.5.32.zip</span><br></pre></td></tr></table></figure>
+
+<p>将对应版本复制到C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/Docker%E5%AE%89%E8%A3%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -799,7 +969,7 @@ SHOW TABLES
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -821,7 +991,7 @@ SHOW TABLES
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
