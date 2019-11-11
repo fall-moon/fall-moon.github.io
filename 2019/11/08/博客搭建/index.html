@@ -1,178 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 
 <head>
-  
-  <title>博客搭建 - 奇奇怪怪的学习笔记</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    博客搭建 | 奇奇怪怪的学习笔记
+  </title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="
+  
+  ">
+  
+  <meta name="author" content="Fallmoon">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="theme-color" content="#1e2327">
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta name="description" content="node.js安装从 https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; 上下载node.js安装包 系统为windows，下载对应版本https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v12.13.0&#x2F;node-v12.13.0-x64.msi chocolatey安装12345678910111213141516171819202122232425262728293031323334">
-<meta property="og:type" content="article">
-<meta property="og:title" content="博客搭建">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#x2F;index.html">
-<meta property="og:site_name" content="奇奇怪怪的学习笔记">
-<meta property="og:description" content="node.js安装从 https:&#x2F;&#x2F;nodejs.org&#x2F;en&#x2F;download&#x2F; 上下载node.js安装包 系统为windows，下载对应版本https:&#x2F;&#x2F;nodejs.org&#x2F;dist&#x2F;v12.13.0&#x2F;node-v12.13.0-x64.msi chocolatey安装12345678910111213141516171819202122232425262728293031323334">
-<meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-08T04:50:28.994Z">
-<meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
-  
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1573451230544">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 </head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/01/13/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" target="_blank" rel="noopener" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Fallmoon" class="mdui-btn mdui-btn-icon"><img src="/images/avatar.png"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="Fallmoon">
-            <img src="/images/avatar.png" alt="Fallmoon">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>Articles</span>4</div>
-        <div><span>Tags</span>4</div>
-        <div><span>Categories</span>2</div>
-    </div>
-    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1">This website</label>
+          <div id="google-search">
+            <gcse:search></gcse:search>
+          </div>
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
+        <li><a href="/archives">Archives</a></li>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
+        <li><a href="/categories">Categories</a></li>
         
-    </ul>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Social</h3>
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Categories</h3>
-    <div class="nexmoe-widget">
-
-      <ul class="category-list">
-
         
-
-
+        <li><a href="/tags">Tags</a></li>
         
-
         
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/try/">try</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/环境搭建/">环境搭建</a>
-          <span class="category-list-count">2</span>
-        </li>
-
+        <li class="desktop-only"><a href="/atom.xml" target="_blank">RSS</a></li>
         
       </ul>
 
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
     </div>
   </div>
+</nav>
 
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Tag Cloud</h3>
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud">
-      <a href="/tags/anaconda/" style="font-size: 10px;">anaconda</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/tensorflow/" style="font-size: 10px;">tensorflow</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 20px;">环境搭建</a>
-    </div>
-    
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/archives" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/archives"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+      <li>
+        <a href="/tags" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/tags"
+           class="header-toolbar-right"> 4 </a>
+      </li>
+      <li>
+        <a href="/categories" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/categories"
+           class="header-toolbar-right"> 2 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">奇奇怪怪的学习笔记</a>
+      
+      
+    </h2>
   </div>
 
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Archive</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
     </div>
   </div>
+</header>
 
 
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2019 Fallmoon
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
-  </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-    <div class="nexmoe-post-cover"> 
-        
-            <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg">
-        
-        <h1>博客搭建</h1>
-    </div>
-  <div class="nexmoe-post-meta">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月08日</a>
-    <a><i class="nexmoefont icon-areachart"></i>3.6k 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 22 分钟</a>
-    
-      <a class="nexmoefont icon-appstore-fill -link" href="/categories/try/">try</a>
-    
-    
-  </div>
-  <article>
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    Fallmoon
+
+    <span class="post-date float-right" title="{{moment(1573188557000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      <i class="fa fa-pencil-square-o"></i>
+      {{moment(1573188557000).fromNow()}}
+    </span>
+  </h3>
+
+  <article class="post-content">
+    <h1>博客搭建</h1>
     <h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>从 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 上下载node.js安装包</p>
 <p>系统为windows，下载对应版本<a href="https://nodejs.org/dist/v12.13.0/node-v12.13.0-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v12.13.0/node-v12.13.0-x64.msi</a></p>
 <h3 id="chocolatey安装"><a href="#chocolatey安装" class="headerlink" title="chocolatey安装"></a>chocolatey安装</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br></pre></td><td class="code"><pre><span class="line">Getting latest version of the Chocolatey package <span class="keyword">for</span> download.</span><br><span class="line">Getting Chocolatey from https://chocolatey.org/api/v2/package/chocolatey/<span class="number">0.10</span>.<span class="number">15</span>.</span><br><span class="line">Downloading <span class="number">7</span>-Zip commandline tool prior to extraction.</span><br><span class="line">Extracting C:\Users\CHENMO~<span class="number">1</span>\AppData\Local\Temp\chocolatey\chocInstall\chocolatey.zip to C:\Users\CHENMO~<span class="number">1</span>\AppData\Local\Temp\chocolatey\chocInstall...</span><br><span class="line">Installing chocolatey on this machine</span><br><span class="line">Creating ChocolateyInstall as an environment variable (targeting <span class="string">'Machine'</span>)</span><br><span class="line">  Setting ChocolateyInstall to <span class="string">'C:\ProgramData\chocolatey'</span></span><br><span class="line">WARNING: It<span class="string">'s very likely you will need to close and reopen your shell</span></span><br><span class="line"><span class="string">  before you can use choco.</span></span><br><span class="line"><span class="string">Restricting write permissions to Administrators</span></span><br><span class="line"><span class="string">We are setting up the Chocolatey package repository.</span></span><br><span class="line"><span class="string">The packages themselves go to '</span>C:\ProgramData\chocolatey\lib<span class="string">'</span></span><br><span class="line"><span class="string">  (i.e. C:\ProgramData\chocolatey\lib\yourPackageName).</span></span><br><span class="line"><span class="string">A shim file for the command line goes to '</span>C:\ProgramData\chocolatey\bin<span class="string">'</span></span><br><span class="line"><span class="string">  and points to an executable in '</span>C:\ProgramData\chocolatey\lib\yourPackageName<span class="string">'.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Creating Chocolatey folders if they do not already exist.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">WARNING: You can safely ignore errors related to missing log files when</span></span><br><span class="line"><span class="string">  upgrading from a version of Chocolatey less than 0.9.9.</span></span><br><span class="line"><span class="string">  '</span>Batch file could not be found<span class="string">' is also safe to ignore.</span></span><br><span class="line"><span class="string">  '</span>The system cannot find the file specified<span class="string">' - also safe.</span></span><br><span class="line"><span class="string">chocolatey.nupkg file not installed in lib.</span></span><br><span class="line"><span class="string"> Attempting to locate it from bootstrapper.</span></span><br><span class="line"><span class="string">PATH environment variable does not have C:\ProgramData\chocolatey\bin in it. Adding...</span></span><br><span class="line"><span class="string">警告: Not setting tab completion: Profile file does not exist at</span></span><br><span class="line"><span class="string">'</span>C:\Users\chenmo5410\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1<span class="string">'.</span></span><br><span class="line"><span class="string">Chocolatey (choco.exe) is now ready.</span></span><br><span class="line"><span class="string">You can call choco from anywhere, command line or powershell by typing choco.</span></span><br><span class="line"><span class="string">Run choco /? for a list of functions.</span></span><br><span class="line"><span class="string">You may need to shut down and restart powershell and/or consoles</span></span><br><span class="line"><span class="string"> first prior to using choco.</span></span><br><span class="line"><span class="string">Ensuring chocolatey commands are on the path</span></span><br><span class="line"><span class="string">Ensuring chocolatey.nupkg is in the lib folder</span></span><br><span class="line"><span class="string">Chocolatey v0.10.15</span></span><br><span class="line"><span class="string">Upgrading the following packages:</span></span><br><span class="line"><span class="string">python2;visualstudio2017-workload-vctools</span></span><br><span class="line"><span class="string">By upgrading you accept licenses for the packages.</span></span><br><span class="line"><span class="string">python2 is not installed. Installing...</span></span><br><span class="line"><span class="string">Progress: Downloading python2 2.7.17... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading python2 2.7.17... 100%</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">python2 v2.7.17 [Approved]</span></span><br><span class="line"><span class="string">python2 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Installing 64-bit python2...</span></span><br><span class="line"><span class="string">python2 has been installed.</span></span><br><span class="line"><span class="string">Installed to '</span>C:\Python27<span class="string">'</span></span><br><span class="line"><span class="string">Adding C:\Python27 to PATH if needed</span></span><br><span class="line"><span class="string">  python2 may be able to be automatically uninstalled.</span></span><br><span class="line"><span class="string">Environment Vars (like PATH) have changed. Close/reopen your shell to</span></span><br><span class="line"><span class="string"> see the changes (or in powershell/cmd.exe just type `refreshenv`).</span></span><br><span class="line"><span class="string"> The upgrade of python2 was successful.</span></span><br><span class="line"><span class="string">  Software installed as '</span>msi<span class="string">', install location is likely default.</span></span><br><span class="line"><span class="string">visualstudio2017-workload-vctools is not installed. Installing...</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-visualstudio.extension v1.8.1 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-visualstudio.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-visualstudio extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-visualstudio.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-visualstudio<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-core.extension v1.3.4 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-core.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-core extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-core.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-core<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-windowsupdate.extension v1.0.4 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-windowsupdate.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-windowsupdate extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-windowsupdate.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB3035131 v1.0.3 [Approved]</span></span><br><span class="line"><span class="string">kb3035131 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB3035131 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb3035131 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB3033929 v1.0.5 [Approved]</span></span><br><span class="line"><span class="string">kb3033929 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB3033929 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb3033929 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2919442 v1.0.20160915 [Approved]</span></span><br><span class="line"><span class="string">kb2919442 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.</span></span><br><span class="line"><span class="string"> The upgrade of kb2919442 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2919355 v1.0.20160915 [Approved]</span></span><br><span class="line"><span class="string">kb2919355 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.</span></span><br><span class="line"><span class="string"> The upgrade of kb2919355 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2999226 v1.0.20181019 [Approved]</span></span><br><span class="line"><span class="string">kb2999226 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB2999226 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb2999226 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">vcredist140 v14.23.27820 [Approved]</span></span><br><span class="line"><span class="string">vcredist140 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Downloading vcredist140-x86</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">9565895</span>b-<span class="number">35</span>a6-<span class="number">434</span>b-a881-<span class="number">11</span>a6f4beec76/<span class="number">4</span>A8157B2FF422C259DDAA2D0E568C0C0AFAB940E1F6E0E482EF83E90DDBAD2D6/VC_redist.x86.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\vcredist140\14.23.27820\VC_redist.x86.exe (13.71 MB).</span></span><br><span class="line"><span class="string">Download of VC_redist.x86.exe (13.71 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing vcredist140-x86...</span></span><br><span class="line"><span class="string">vcredist140-x86 has been installed.</span></span><br><span class="line"><span class="string">Downloading vcredist140-x64 64 bit</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">9565895</span>b-<span class="number">35</span>a6-<span class="number">434</span>b-a881-<span class="number">11</span>a6f4beec76/EE84FED2552E018E854D4CD2496DF4DD516F30733A27901167B8A9882119E57C/VC_redist.x64.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\vcredist140\14.23.27820\VC_redist.x64.exe (14.38 MB).</span></span><br><span class="line"><span class="string">Download of VC_redist.x64.exe (14.38 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing vcredist140-x64...</span></span><br><span class="line"><span class="string">vcredist140-x64 has been installed.</span></span><br><span class="line"><span class="string">  vcredist140 may be able to be automatically uninstalled.</span></span><br><span class="line"><span class="string"> The upgrade of vcredist140 was successful.</span></span><br><span class="line"><span class="string">  Software installed as '</span>exe<span class="string">', install location is likely default.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">visualstudio-installer v2.0.1 [Approved]</span></span><br><span class="line"><span class="string">visualstudio-installer package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> The upgrade of visualstudio-installer was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-dotnetfx.extension v1.0.1 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-dotnetfx.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-dotnetfx extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-dotnetfx.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-dotnetfx<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">dotnetfx v4.8.0.20190930 [Approved]</span></span><br><span class="line"><span class="string">dotnetfx package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Microsoft .NET Framework 4.8 or later is already installed.</span></span><br><span class="line"><span class="string"> The upgrade of dotnetfx was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">visualstudio2017buildtools v15.9.17.0 [Approved]</span></span><br><span class="line"><span class="string">visualstudio2017buildtools package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Downloading channel manifest</span></span><br><span class="line"><span class="string">  from '</span>https://aka.ms/vs/<span class="number">15</span>/release/channel<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\chocolatey-visualstudio.extension\ChannelManifest_81725945.man (69.73 KB).</span></span><br><span class="line"><span class="string">Download of ChannelManifest_81725945.man (69.73 KB) completed.</span></span><br><span class="line"><span class="string">Downloading catalog manifest</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">0</span>ada7773-<span class="number">232</span>e-<span class="number">4</span>df0-b696-c9f628d08d83/<span class="number">7</span>d6793fbdd2dc1dcc7f39ff96fef9e03593f16cdc2285e87317372c4a3dfefda/VisualStudio.vsman<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\chocolatey-visualstudio.extension\Catalog_-540295225.man (7.91 MB).</span></span><br><span class="line"><span class="string">Download of Catalog_-540295225.man (7.91 MB) completed.</span></span><br><span class="line"><span class="string">Downloading visualstudio2017buildtools</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">0</span>ada7773-<span class="number">232</span>e-<span class="number">4</span>df0-b696-c9f628d08d83/cc0515d38477b47de088fde1270a17dc4b25401c33a3f031ba4e5a1728c83372/vs_BuildTools.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\visualstudio2017buildtools\15.9.17.0\vs_BuildTools.exe (1.23 MB).</span></span><br><span class="line"><span class="string">Download of vs_BuildTools.exe (1.23 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing visualstudio2017buildtools...</span></span><br></pre></td></tr></table></figure>
@@ -207,65 +172,40 @@
 <p>可以通过username.github.io进行访问</p>
 
   </article>
-  
+</div>
+
+
     
-<div class="nexmoe-post-copyright">
-<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-<strong>Author：</strong>Fallmoon<br>
-<strong>Link：</strong><a href="http://yoursite.com/2019/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#x2F;" target="_blank" rel="noopener">http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA&#x2F;</a><br>
 
-  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+
 
 </div>
 
-
-  
-  <section class="nexmoe-comment">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
-<div id="gitalk"></div>
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-        clientID: '80b2453b6d5f37ad6225',
-        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
-        id: window.location.pathname,
-        repo: 'nexmoe.github.io',
-        owner: 'nexmoe',
-        admin: 'nexmoe'
-    })
-    gitalk.render('gitalk')
-</script>
-</section>
-</div>
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <div class="clearfix">
+    <a href="http://yoursite.com" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li>© 2019 Fallmoon</li>
+      <li><a href="http://yoursite.com">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
- 
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-
-
- 
-    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
-
-
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script src="/js/app.js?v=1573451230549"></script>
-<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
-
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
-
-
-
-  
+    </div>
+    
+  </footer>
+</div>
 
 
 
 
+<script src="/js/main.js"></script>
 
 </body>
-
 </html>

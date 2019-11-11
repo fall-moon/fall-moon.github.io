@@ -1,449 +1,271 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 
 <head>
-  
-  <title>Archive：2019/11 - 奇奇怪怪的学习笔记</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    奇奇怪怪的学习笔记
+  </title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="author" content="Fallmoon">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="theme-color" content="#1e2327">
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/png" />
-  <meta property="og:type" content="website">
-<meta property="og:title" content="奇奇怪怪的学习笔记">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;11&#x2F;index.html">
-<meta property="og:site_name" content="奇奇怪怪的学习笔记">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
-   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
   
-  
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1573451230592">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
 </head>
 
-<body class="mdui-drawer-body-left">
-  
-  <div id="nexmoe-background">
-    <div class="nexmoe-bg" style="background-image: url(https://i.loli.net/2019/01/13/5c3aec85a4343.jpg)"></div>
-    <div class="mdui-appbar mdui-shadow-0">
-      <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
-        <div class="mdui-toolbar-spacer"></div>
-        <!--<a href="javascript:;" target="_blank" rel="noopener" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Fallmoon" class="mdui-btn mdui-btn-icon"><img src="/images/avatar.png"></a>
-       </div>
-    </div>
-  </div>
-  <div id="nexmoe-header">
-      <div class="nexmoe-drawer mdui-drawer" id="drawer">
-    <div class="nexmoe-avatar mdui-ripple">
-        <a href="/" title="Fallmoon">
-            <img src="/images/avatar.png" alt="Fallmoon">
-        </a>
-    </div>
-    <div class="nexmoe-count">
-        <div><span>Articles</span>4</div>
-        <div><span>Tags</span>4</div>
-        <div><span>Categories</span>2</div>
-    </div>
-    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1">This website</label>
+          <div id="google-search">
+            <gcse:search></gcse:search>
+          </div>
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
-            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
-            <div class="mdui-list-item-content">
-                回到首页
-            </div>
-        </a>
+        <li><a href="/archives">Archives</a></li>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
-            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-            <div class="mdui-list-item-content">
-                关于博客
-            </div>
-        </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
-            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
-            <div class="mdui-list-item-content">
-                我的朋友
-            </div>
-        </a>
+        <li><a href="/categories">Categories</a></li>
         
-    </ul>
-    <aside id="nexmoe-sidebar">
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Social</h3>
-    <div class="nexmoe-widget nexmoe-social">
-        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
-            <i class="nexmoefont icon-bilibili"></i>
-        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
-            <i class="nexmoefont icon-github"></i>
-        </a>
-    </div>
-</div>
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Categories</h3>
-    <div class="nexmoe-widget">
-
-      <ul class="category-list">
-
         
-
-
+        <li><a href="/tags">Tags</a></li>
         
-
         
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/try/">try</a>
-          <span class="category-list-count">1</span>
-        </li>
-
-        
-
-        <li class="category-list-item">
-          <a class="category-list-link" href="/categories/环境搭建/">环境搭建</a>
-          <span class="category-list-count">2</span>
-        </li>
-
+        <li class="desktop-only"><a href="/atom.xml" target="_blank">RSS</a></li>
         
       </ul>
 
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  
+
+<div class="container-lg">
+  
+
+<div class="blog-intro">
+  <div class="blog-intro-user">
+    <img class="avatar" src="https://octodex.github.com/images/baracktocat.jpg">
+    <div class="user-name">
+      <div class="blog-title">奇奇怪怪的学习笔记</div>
+      <div class="blog-author">Fallmoon</div>
+        <ul class="user-detail mobile-only">
+    
+    <li>
+      <i class="fa fa-link"></i>
+      <a href="http://yoursite.com">http://yoursite.com</a>
+    </li>
+  </ul>
+    </div>
+    <div class="blog-description">
+      
     </div>
   </div>
 
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Tag Cloud</h3>
-    <div id="randomtagcloud" class="nexmoe-widget tagcloud">
-      <a href="/tags/anaconda/" style="font-size: 10px;">anaconda</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/tensorflow/" style="font-size: 10px;">tensorflow</a> <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" style="font-size: 20px;">环境搭建</a>
-    </div>
+  <ul class="user-detail desktop-only">
     
+    <li>
+      <i class="fa fa-link"></i>
+      <a href="http://yoursite.com">http://yoursite.com</a>
+    </li>
+  </ul>
+
+  <div class="social-media desktop-only">
+    <h4>Social Media</h4>
+    <ul>
+      
+    </ul>
   </div>
-
-  
-  
-  <div class="nexmoe-widget-wrap">
-    <h3 class="nexmoe-widget-title">Archive</h3>
-    <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
-    </div>
-  </div>
+</div>
 
 
-  
-</aside>
-    <div class="nexmoe-copyright">
-        &copy; 2019 Fallmoon
-        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
-    </div>
-</div><!-- .nexmoe-drawer -->
-  </div>
-  <div id="nexmoe-content">
-    <div class="nexmoe-primary">
-        <section class="nexmoe-posts" id="brand-waterfall">
+  <div class="blog-detail">
     
-    <div class="nexmoe-post">
-        <a href="/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/anaconda%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="annaconda环境迁移和tensorflow2.0-gpu安装">
-                
-                <h1>annaconda环境迁移和tensorflow2.0-gpu安装</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月11日</a>
-            <a><i class="nexmoefont icon-areachart"></i>206 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+<nav class="blog-detail-nav desktop-only">
+  <ul class="clearfix">
+    <li class="">
+      <a href="/">Overview</a></li>
+    <li class="selected">
+      <a href="/archives">Posts <span class="counter">4</span></a>
+    </li>
+    <li class="">
+      <a href="/categories">Categories <span
+                class="counter">2</span></a></li>
+    <li class="">
+      <a href="/tags">Tags <span class="counter">4</span></a></li>
+  </ul>
+</nav>
+
+    <div class="body-secondary">
+      <ul class="archive-list">
+        
+        <li class="archive-list-item">
+          <h2><a href="/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/anaconda%E7%8E%AF%E5%A2%83%E8%BF%81%E7%A7%BB/">annaconda环境迁移和tensorflow2.0-gpu安装</a></h2>
+          <p>
+               环境备份       1   2   3       conda env list   activate [env_name]   conda env export --file [file_name]       
+
+ 环境导入 
+      1       conda env create...
+          </p>
+          <ul class="tag-list clearfix">
             
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a>
+            <li class="tag-list-item"><a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a></li>
             
+            <li class="tag-list-item"><a href="/tags/anaconda/">anaconda</a></li>
             
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/anaconda/" rel="tag">anaconda</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/tensorflow/" rel="tag">tensorflow</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" rel="tag">环境搭建</a>
+            <li class="tag-list-item"><a href="/tags/tensorflow/">tensorflow</a></li>
             
-        </div>
-        <article>
+          </ul>
+          <div class="post-info">
+            <span>
+              
+              <a class="category-link" href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"><i class="fa fa-folder-open"></i> 环境搭建</a>
+              
+            </span>
+            <span><i class="fa fa-tag"></i> 3 </span>
+            <span>Published {{moment(1573449627000).fromNow()}}</span>
+          </div>
+        </li>
+        
+        <li class="archive-list-item">
+          <h2><a href="/2019/11/11/Docker%E5%AE%89%E8%A3%85/">Docker安装</a></h2>
+          <p>
+               Docker Toolbox 安装  
+ 下载Docker Toolbox安装包 
+ 在win10下安装，由于需要运行VMware等程序，关闭win10下的hyper-v功能并确定CPU虚拟化支持 
+ 安装Docker Toolbox至自定义目录 
+ 添加环境变量MACHINE_STORAGE...
+          </p>
+          <ul class="tag-list clearfix">
             
-            <h3 id="环境备份"><a href="#环境备份" class="headerlink" title="环境备份"></a>环境备份</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda env list</span><br><span class="line">activate [env_name]</span><br><span class="line">conda env export --file [file_name]</span><br></pre></td></tr></table></figure>
-
-<p>环境导入</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda env create -f [file_path]</span><br></pre></td></tr></table></figure>
-
-<p>产生错误not found</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">intel-openmp=2019.5=281</span><br></pre></td></tr></table></figure>
-
-<p>在yml文件中删除对应描述继续安装即可</p>
-<h3 id="环境创建"><a href="#环境创建" class="headerlink" title="环境创建"></a>环境创建</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create -n [env_name] &lt;python=3.5&gt;</span><br></pre></td></tr></table></figure>
-
-<p>python=3.5为具体包版本指定</p>
-<h3 id="tensorflow2-0安装"><a href="#tensorflow2-0安装" class="headerlink" title="tensorflow2.0安装"></a>tensorflow2.0安装</h3><p>安装参考网站：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://tensorflow.google.cn/install/gpu</span><br></pre></td></tr></table></figure>
-
-<h4 id="下载显卡驱动程序"><a href="#下载显卡驱动程序" class="headerlink" title="下载显卡驱动程序"></a>下载显卡驱动程序</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.nvidia.com/Download/index.aspx?lang=cn</span><br></pre></td></tr></table></figure>
-
-<p>对应显卡版本为1660Ti，下载DCH的STUDIO版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://cn.download.nvidia.com/Windows/441.12/441.12-desktop-win10-64bit-international-nsd-dch-whql.exe</span><br></pre></td></tr></table></figure>
-
-<h4 id="下载CUDA："><a href="#下载CUDA：" class="headerlink" title="下载CUDA："></a>下载CUDA：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/cuda-toolkit-archive</span><br></pre></td></tr></table></figure>
-
-<p>下载CUDNN：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/rdp/cudnn-download</span><br></pre></td></tr></table></figure>
-
-<p>选择windows10版本</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developer.nvidia.com/compute/machine-learning/cudnn/secure/7.6.5.32/Production/10.0_20191031/cudnn-10.0-windows10-x64-v7.6.5.32.zip</span><br></pre></td></tr></table></figure>
-
-<p>将对应版本复制到C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA</p>
-
+            <li class="tag-list-item"><a href="/tags/docker/">docker</a></li>
             
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/11/11/Docker%E5%AE%89%E8%A3%85/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="Docker安装">
-                
-                <h1>Docker安装</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月11日</a>
-            <a><i class="nexmoefont icon-areachart"></i>1k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 5 分钟</a>
+            <li class="tag-list-item"><a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a></li>
             
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">环境搭建</a>
+          </ul>
+          <div class="post-info">
+            <span>
+              
+              <a class="category-link" href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"><i class="fa fa-folder-open"></i> 环境搭建</a>
+              
+            </span>
+            <span><i class="fa fa-tag"></i> 2 </span>
+            <span>Published {{moment(1573449207000).fromNow()}}</span>
+          </div>
+        </li>
+        
+        <li class="archive-list-item">
+          <h2><a href="/2019/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></h2>
+          <p>
+               node.js安装  从  https://nodejs.org/en/download/  上下载node.js安装包 
+ 系统为windows，下载对应版本 https://nodejs.org/dist/v12.13.0/node-v12.13.0-x64.msi  
+   chocol...
+          </p>
+          <ul class="tag-list clearfix">
             
+          </ul>
+          <div class="post-info">
+            <span>
+              
+              <a class="category-link" href="/categories/try/"><i class="fa fa-folder-open"></i> try</a>
+              
+            </span>
+            <span><i class="fa fa-tag"></i> 0 </span>
+            <span>Published {{moment(1573188557000).fromNow()}}</span>
+          </div>
+        </li>
+        
+        <li class="archive-list-item">
+          <h2><a href="/2019/11/08/hello-world/">Hello World</a></h2>
+          <p>
+             Welcome to  Hexo ! This is your very first post. Check  documentation  for more info. If you get any problems when using Hexo, you can find the answe...
+          </p>
+          <ul class="tag-list clearfix">
             
-                <a class="nexmoefont icon-tag-fill -link" href="/tags/docker/" rel="tag">docker</a> <a class="nexmoefont icon-tag-fill -link" href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/" rel="tag">环境搭建</a>
-            
-        </div>
-        <article>
-            
-            <h3 id="Docker-Toolbox-安装"><a href="#Docker-Toolbox-安装" class="headerlink" title="Docker Toolbox 安装"></a>Docker Toolbox 安装</h3><ul>
-<li>下载Docker Toolbox安装包</li>
-<li>在win10下安装，由于需要运行VMware等程序，关闭win10下的hyper-v功能并确定CPU虚拟化支持</li>
-<li>安装Docker Toolbox至自定义目录</li>
-<li>添加环境变量MACHINE_STORAGE_PATH，值为<code>D:\VirtualBoxSpace\.docker\machine</code>可自定义</li>
-<li>注：在添加环境变量后，需要在对应目录下新建cache文件夹，将boot2docker.iso复制进cache文件夹</li>
-</ul>
-<p>打开Docker Quickstart</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">Creating CA: D:\VirtualBoxSpace\.docker\machine\certs\ca.pem</span><br><span class="line">Creating client certificate: D:\VirtualBoxSpace\.docker\machine\certs\cert.pem</span><br><span class="line">Running pre-create checks...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">Creating machine...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">(default) Copying D:\VirtualBoxSpace\.docker\machine\cache\boot2docker.iso to D:\VirtualBoxSpace\.docker\machine\machines\default\boot2docker.iso...</span><br><span class="line">(default) Creating VirtualBox VM...</span><br><span class="line">(default) Creating SSH key...</span><br><span class="line">(default) Starting the VM...</span><br><span class="line">(default) Check network to re-create if needed...</span><br><span class="line">(default) Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.</span><br><span class="line">(default) Waiting for an IP...</span><br><span class="line">Waiting for machine to be running, this may take a few minutes...</span><br><span class="line">Detecting operating system of created instance...</span><br><span class="line">Waiting for SSH to be available...</span><br><span class="line">Detecting the provisioner...</span><br><span class="line">Provisioning with boot2docker...</span><br><span class="line">Copying certs to the local machine directory...</span><br><span class="line">Copying certs to the remote machine...</span><br><span class="line">Setting Docker configuration on the remote daemon...</span><br><span class="line">Checking connection to Docker...</span><br><span class="line">Docker is up and running!</span><br><span class="line">To see how to connect your Docker Client to the Docker Engine running on this virtual machine, <span class="keyword">run</span><span class="bash">: C:\Program_self\Docker Toolbox\docker-machine.exe env default</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                        <span class="comment">##         .</span></span><br><span class="line">                  <span class="comment">## ## ##        ==</span></span><br><span class="line">               <span class="comment">## ## ## ## ##    ===</span></span><br><span class="line">           /<span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">"\___/ ===</span></span><br><span class="line"><span class="string">      ~~~ &#123;~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===-</span></span><br></pre></td></tr></table></figure>
-<pre><code>\______ o           __/
-  \    \         __/
-   \____\_______/</code></pre><p>docker is configured to use the default machine with IP 192.168.99.100<br>For help getting started, check out the docs at <a href="https://docs.docker.com" target="_blank" rel="noopener">https://docs.docker.com</a></p>
-<p>Start interactive shell</p>
-<p>chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox<br>$</p>
-<pre><code>
-run hello-world
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run hello-world</span><br><span class="line">Unable to find image <span class="string">'hello-world:latest'</span> locally</span><br><span class="line">latest: Pulling from library/hello-world</span><br><span class="line">1b930d010525: Pull complete</span><br><span class="line">Digest: sha256:c3b4ada4687bbaa170745b3e4dd8ac3f194ca95b2d0518b417fb47e5879d9b5f</span><br><span class="line">Status: Downloaded newer image <span class="keyword">for</span> hello-world:latest</span><br><span class="line"></span><br><span class="line">Hello from Docker!</span><br><span class="line">This message shows that your installation appears to be working correctly.</span><br><span class="line"></span><br><span class="line">To generate this message, Docker took the following steps:</span><br><span class="line"> 1. The Docker client contacted the Docker daemon.</span><br><span class="line"> 2. The Docker daemon pulled the <span class="string">"hello-world"</span> image from the Docker Hub.</span><br><span class="line">    (amd64)</span><br><span class="line"> 3. The Docker daemon created a new container from that image <span class="built_in">which</span> runs the</span><br><span class="line">    executable that produces the output you are currently reading.</span><br><span class="line"> 4. The Docker daemon streamed that output to the Docker client, <span class="built_in">which</span> sent it</span><br><span class="line">    to your terminal.</span><br><span class="line"></span><br><span class="line">To try something more ambitious, you can run an Ubuntu container with:</span><br><span class="line"> $ docker run -it ubuntu bash</span><br><span class="line"></span><br><span class="line">Share images, automate workflows, and more with a free Docker ID:</span><br><span class="line"> https://hub.docker.com/</span><br><span class="line"></span><br><span class="line">For more examples and ideas, visit:</span><br><span class="line"> https://docs.docker.com/get-started/</span><br></pre></td></tr></table></figure>
-
-查看容器
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker image ls</span><br><span class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">hello-world         latest              fce289e99eb9        10 months ago       1.84kB</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker container ls --all</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                          PORTS               NAMES</span><br><span class="line">a21f5e9f52f6        hello-world         <span class="string">"/hello"</span>            About a minute ago   Exited (0) About a minute ago                       dreamy_jennings</span><br></pre></td></tr></table></figure>
-
-#### 常用命令
-
-查看容器
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker image ls</span><br><span class="line">docker container ls</span><br></pre></td></tr></table></figure>
-
-停用容器
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker container stop [container_name]</span><br></pre></td></tr></table></figure>
-
-删除容器
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker container rm [container_name]</span><br></pre></td></tr></table></figure>
-
-#### nginx相关
-
-* Nginx服务调用
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name nginx -p 8080:80 -d nginx</span><br></pre></td></tr></table></figure>
-
-由于docker工作在192.168.99.100下
-
-所以在访问Nginx时，无法访问127.0.0.1:8080
-
-需要访问192.168.99.100：8080
-
-* 访问容器
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker ps</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES</span><br><span class="line">5303d5179816        nginx               <span class="string">"nginx -g 'daemon of…"</span>   3 minutes ago       Up 3 minutes        0.0.0.0:8080-&gt;80/tcp   nginx</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker attach 5303d5179816</span><br><span class="line">192.168.99.1 - - [29/Oct/2019:03:45:15 +0000] <span class="string">"GET / HTTP/1.1"</span> 304 0 <span class="string">"-"</span> <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"</span> <span class="string">"-"</span></span><br></pre></td></tr></table></figure>
-
-当多个窗口同时使用该命令进入该容器时，所有的窗口都会同步显示。如果有一个窗口阻塞了，那么其他窗口也无法再进行操作。 
-
-
-
-### mysql操作
-
-#### 安装
-
-在docker中`docker pull mysql`下载mysql镜像
-
-使用如下命令进行服务启动，默认使用3306端口，密码为123456的root用户
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run --name first-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql</span><br><span class="line">ad017dcb454327858fec7b47ac93b3f99e8f3d76d9cce266edab88419c07e325</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker container ls</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES</span><br><span class="line">ad017dcb4543        mysql               <span class="string">"docker-entrypoint.s…"</span>   2 hours ago         Up 6 seconds        0.0.0.0:3306-&gt;3306/tcp, 33060/tcp   first-mysql</span><br><span class="line">5303d5179816        nginx               <span class="string">"nginx -g 'daemon of…"</span>   26 hours ago        Up 24 hours         0.0.0.0:8080-&gt;80/tcp                nginx</span><br></pre></td></tr></table></figure>
-
-#### DataGrip连接mySQL
-
-在DG中新建数据库连接，并且使用如下配置进行连接
-
-![image-20191030140615359](image-20191030140615359.png)
-
-#### SQL常用操作命令
-
-CREAT DATABASES  【数据库名】
-
-SHOW DATABASES
-
-USE 【数据库名】
-
-SHOW TABLES
-</code></pre>
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="博客搭建">
-                
-                <h1>博客搭建</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月08日</a>
-            <a><i class="nexmoefont icon-areachart"></i>3.6k 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 22 分钟</a>
-            
-                <a class="nexmoefont icon-appstore-fill -link" href="/categories/try/">try</a>
-            
-            
-        </div>
-        <article>
-            
-            <h2 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h2><p>从 <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a> 上下载node.js安装包</p>
-<p>系统为windows，下载对应版本<a href="https://nodejs.org/dist/v12.13.0/node-v12.13.0-x64.msi" target="_blank" rel="noopener">https://nodejs.org/dist/v12.13.0/node-v12.13.0-x64.msi</a></p>
-<h3 id="chocolatey安装"><a href="#chocolatey安装" class="headerlink" title="chocolatey安装"></a>chocolatey安装</h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br></pre></td><td class="code"><pre><span class="line">Getting latest version of the Chocolatey package <span class="keyword">for</span> download.</span><br><span class="line">Getting Chocolatey from https://chocolatey.org/api/v2/package/chocolatey/<span class="number">0.10</span>.<span class="number">15</span>.</span><br><span class="line">Downloading <span class="number">7</span>-Zip commandline tool prior to extraction.</span><br><span class="line">Extracting C:\Users\CHENMO~<span class="number">1</span>\AppData\Local\Temp\chocolatey\chocInstall\chocolatey.zip to C:\Users\CHENMO~<span class="number">1</span>\AppData\Local\Temp\chocolatey\chocInstall...</span><br><span class="line">Installing chocolatey on this machine</span><br><span class="line">Creating ChocolateyInstall as an environment variable (targeting <span class="string">'Machine'</span>)</span><br><span class="line">  Setting ChocolateyInstall to <span class="string">'C:\ProgramData\chocolatey'</span></span><br><span class="line">WARNING: It<span class="string">'s very likely you will need to close and reopen your shell</span></span><br><span class="line"><span class="string">  before you can use choco.</span></span><br><span class="line"><span class="string">Restricting write permissions to Administrators</span></span><br><span class="line"><span class="string">We are setting up the Chocolatey package repository.</span></span><br><span class="line"><span class="string">The packages themselves go to '</span>C:\ProgramData\chocolatey\lib<span class="string">'</span></span><br><span class="line"><span class="string">  (i.e. C:\ProgramData\chocolatey\lib\yourPackageName).</span></span><br><span class="line"><span class="string">A shim file for the command line goes to '</span>C:\ProgramData\chocolatey\bin<span class="string">'</span></span><br><span class="line"><span class="string">  and points to an executable in '</span>C:\ProgramData\chocolatey\lib\yourPackageName<span class="string">'.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Creating Chocolatey folders if they do not already exist.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">WARNING: You can safely ignore errors related to missing log files when</span></span><br><span class="line"><span class="string">  upgrading from a version of Chocolatey less than 0.9.9.</span></span><br><span class="line"><span class="string">  '</span>Batch file could not be found<span class="string">' is also safe to ignore.</span></span><br><span class="line"><span class="string">  '</span>The system cannot find the file specified<span class="string">' - also safe.</span></span><br><span class="line"><span class="string">chocolatey.nupkg file not installed in lib.</span></span><br><span class="line"><span class="string"> Attempting to locate it from bootstrapper.</span></span><br><span class="line"><span class="string">PATH environment variable does not have C:\ProgramData\chocolatey\bin in it. Adding...</span></span><br><span class="line"><span class="string">警告: Not setting tab completion: Profile file does not exist at</span></span><br><span class="line"><span class="string">'</span>C:\Users\chenmo5410\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1<span class="string">'.</span></span><br><span class="line"><span class="string">Chocolatey (choco.exe) is now ready.</span></span><br><span class="line"><span class="string">You can call choco from anywhere, command line or powershell by typing choco.</span></span><br><span class="line"><span class="string">Run choco /? for a list of functions.</span></span><br><span class="line"><span class="string">You may need to shut down and restart powershell and/or consoles</span></span><br><span class="line"><span class="string"> first prior to using choco.</span></span><br><span class="line"><span class="string">Ensuring chocolatey commands are on the path</span></span><br><span class="line"><span class="string">Ensuring chocolatey.nupkg is in the lib folder</span></span><br><span class="line"><span class="string">Chocolatey v0.10.15</span></span><br><span class="line"><span class="string">Upgrading the following packages:</span></span><br><span class="line"><span class="string">python2;visualstudio2017-workload-vctools</span></span><br><span class="line"><span class="string">By upgrading you accept licenses for the packages.</span></span><br><span class="line"><span class="string">python2 is not installed. Installing...</span></span><br><span class="line"><span class="string">Progress: Downloading python2 2.7.17... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading python2 2.7.17... 100%</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">python2 v2.7.17 [Approved]</span></span><br><span class="line"><span class="string">python2 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Installing 64-bit python2...</span></span><br><span class="line"><span class="string">python2 has been installed.</span></span><br><span class="line"><span class="string">Installed to '</span>C:\Python27<span class="string">'</span></span><br><span class="line"><span class="string">Adding C:\Python27 to PATH if needed</span></span><br><span class="line"><span class="string">  python2 may be able to be automatically uninstalled.</span></span><br><span class="line"><span class="string">Environment Vars (like PATH) have changed. Close/reopen your shell to</span></span><br><span class="line"><span class="string"> see the changes (or in powershell/cmd.exe just type `refreshenv`).</span></span><br><span class="line"><span class="string"> The upgrade of python2 was successful.</span></span><br><span class="line"><span class="string">  Software installed as '</span>msi<span class="string">', install location is likely default.</span></span><br><span class="line"><span class="string">visualstudio2017-workload-vctools is not installed. Installing...</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-visualstudio.extension 1.8.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017-workload-vctools 1.3.2... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading vcredist140 14.23.27820... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-core.extension 1.3.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3033929 1.0.5... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-windowsupdate.extension 1.0.4... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB3035131 1.0.3... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919355 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2919442 1.0.20160915... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading KB2999226 1.0.20181019... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio-installer 2.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading visualstudio2017buildtools 15.9.17.0... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading dotnetfx 4.8.0.20190930... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string">Progress: Downloading chocolatey-dotnetfx.extension 1.0.1... 100%</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-visualstudio.extension v1.8.1 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-visualstudio.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-visualstudio extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-visualstudio.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-visualstudio<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-core.extension v1.3.4 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-core.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-core extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-core.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-core<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-windowsupdate.extension v1.0.4 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-windowsupdate.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-windowsupdate extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-windowsupdate.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB3035131 v1.0.3 [Approved]</span></span><br><span class="line"><span class="string">kb3035131 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB3035131 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb3035131 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB3033929 v1.0.5 [Approved]</span></span><br><span class="line"><span class="string">kb3033929 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB3033929 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb3033929 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2919442 v1.0.20160915 [Approved]</span></span><br><span class="line"><span class="string">kb2919442 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.</span></span><br><span class="line"><span class="string"> The upgrade of kb2919442 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2919355 v1.0.20160915 [Approved]</span></span><br><span class="line"><span class="string">kb2919355 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.</span></span><br><span class="line"><span class="string"> The upgrade of kb2919355 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">KB2999226 v1.0.20181019 [Approved]</span></span><br><span class="line"><span class="string">kb2999226 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Skipping installation because update KB2999226 does not apply to this operating system (Microsoft Windows 10 专业版).</span></span><br><span class="line"><span class="string"> The upgrade of kb2999226 was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">vcredist140 v14.23.27820 [Approved]</span></span><br><span class="line"><span class="string">vcredist140 package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Downloading vcredist140-x86</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">9565895</span>b-<span class="number">35</span>a6-<span class="number">434</span>b-a881-<span class="number">11</span>a6f4beec76/<span class="number">4</span>A8157B2FF422C259DDAA2D0E568C0C0AFAB940E1F6E0E482EF83E90DDBAD2D6/VC_redist.x86.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\vcredist140\14.23.27820\VC_redist.x86.exe (13.71 MB).</span></span><br><span class="line"><span class="string">Download of VC_redist.x86.exe (13.71 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing vcredist140-x86...</span></span><br><span class="line"><span class="string">vcredist140-x86 has been installed.</span></span><br><span class="line"><span class="string">Downloading vcredist140-x64 64 bit</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">9565895</span>b-<span class="number">35</span>a6-<span class="number">434</span>b-a881-<span class="number">11</span>a6f4beec76/EE84FED2552E018E854D4CD2496DF4DD516F30733A27901167B8A9882119E57C/VC_redist.x64.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\vcredist140\14.23.27820\VC_redist.x64.exe (14.38 MB).</span></span><br><span class="line"><span class="string">Download of VC_redist.x64.exe (14.38 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing vcredist140-x64...</span></span><br><span class="line"><span class="string">vcredist140-x64 has been installed.</span></span><br><span class="line"><span class="string">  vcredist140 may be able to be automatically uninstalled.</span></span><br><span class="line"><span class="string"> The upgrade of vcredist140 was successful.</span></span><br><span class="line"><span class="string">  Software installed as '</span>exe<span class="string">', install location is likely default.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">visualstudio-installer v2.0.1 [Approved]</span></span><br><span class="line"><span class="string">visualstudio-installer package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> The upgrade of visualstudio-installer was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chocolatey-dotnetfx.extension v1.0.1 [Approved]</span></span><br><span class="line"><span class="string">chocolatey-dotnetfx.extension package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string"> Installed/updated chocolatey-dotnetfx extensions.</span></span><br><span class="line"><span class="string"> The upgrade of chocolatey-dotnetfx.extension was successful.</span></span><br><span class="line"><span class="string">  Software installed to '</span>C:\ProgramData\chocolatey\extensions\chocolatey-dotnetfx<span class="string">'</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">dotnetfx v4.8.0.20190930 [Approved]</span></span><br><span class="line"><span class="string">dotnetfx package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Microsoft .NET Framework 4.8 or later is already installed.</span></span><br><span class="line"><span class="string"> The upgrade of dotnetfx was successful.</span></span><br><span class="line"><span class="string">  Software install location not explicitly set, could be in package or</span></span><br><span class="line"><span class="string">  default install location if installer.</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">visualstudio2017buildtools v15.9.17.0 [Approved]</span></span><br><span class="line"><span class="string">visualstudio2017buildtools package files upgrade completed. Performing other installation steps.</span></span><br><span class="line"><span class="string">Downloading channel manifest</span></span><br><span class="line"><span class="string">  from '</span>https://aka.ms/vs/<span class="number">15</span>/release/channel<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\chocolatey-visualstudio.extension\ChannelManifest_81725945.man (69.73 KB).</span></span><br><span class="line"><span class="string">Download of ChannelManifest_81725945.man (69.73 KB) completed.</span></span><br><span class="line"><span class="string">Downloading catalog manifest</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">0</span>ada7773-<span class="number">232</span>e-<span class="number">4</span>df0-b696-c9f628d08d83/<span class="number">7</span>d6793fbdd2dc1dcc7f39ff96fef9e03593f16cdc2285e87317372c4a3dfefda/VisualStudio.vsman<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\chocolatey-visualstudio.extension\Catalog_-540295225.man (7.91 MB).</span></span><br><span class="line"><span class="string">Download of Catalog_-540295225.man (7.91 MB) completed.</span></span><br><span class="line"><span class="string">Downloading visualstudio2017buildtools</span></span><br><span class="line"><span class="string">  from '</span>https://download.visualstudio.microsoft.com/download/pr/<span class="number">0</span>ada7773-<span class="number">232</span>e-<span class="number">4</span>df0-b696-c9f628d08d83/cc0515d38477b47de088fde1270a17dc4b25401c33a3f031ba4e5a1728c83372/vs_BuildTools.exe<span class="string">'</span></span><br><span class="line"><span class="string">Progress: 100% - Completed download of C:\Users\chenmo5410\AppData\Local\Temp\chocolatey\visualstudio2017buildtools\15.9.17.0\vs_BuildTools.exe (1.23 MB).</span></span><br><span class="line"><span class="string">Download of vs_BuildTools.exe (1.23 MB) completed.</span></span><br><span class="line"><span class="string">Hashes match.</span></span><br><span class="line"><span class="string">Installing visualstudio2017buildtools...</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="node-js检查"><a href="#node-js检查" class="headerlink" title="node.js检查"></a>node.js检查</h3><p>在bash下运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\chenmo5410&gt;node -v</span><br><span class="line">v12.13.0</span><br></pre></td></tr></table></figure>
-
-<h2 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h2><p>在bash中安装hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>在本地的新建文件夹中选择get bash here</p>
-<h3 id="新建仓库文件夹"><a href="#新建仓库文件夹" class="headerlink" title="新建仓库文件夹"></a>新建仓库文件夹</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace</span><br><span class="line">$ hexo init fall-moon.github.io</span><br><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">Cloning into <span class="string">'D:\HexoSpace\fall-moon.github.io'</span>...</span><br><span class="line">remote: Enumerating objects: 22, <span class="keyword">done</span>.</span><br><span class="line">remote: Counting objects: 100% (22/22), <span class="keyword">done</span>.</span><br><span class="line">remote: Compressing objects: 100% (17/17), <span class="keyword">done</span>.</span><br><span class="line">Receiving obremjects: o 63% (97/153), 8.01t e: ToKiB ta|l  71.5030 (delta 8), reused 9 (delta 3), pack-reused  KiB/131</span><br><span class="line">Receiving objects: 100% (153/153), 29.67 KiB | 7.00 KiB/s, <span class="keyword">done</span>.</span><br><span class="line">Resolving deltas: 100% (70/70), <span class="keyword">done</span>.</span><br><span class="line">Checking connectivity... <span class="keyword">done</span>.</span><br><span class="line">Submodule <span class="string">'themes/landscape'</span> (https://github.com/hexojs/hexo-theme-landscape.git) registered <span class="keyword">for</span> path <span class="string">'themes/landscape'</span></span><br><span class="line">Cloning into <span class="string">'D:/HexoSpace/fall-moon.github.io/themes/landscape'</span>...</span><br><span class="line">Submodule path <span class="string">'themes/landscape'</span>: checked out <span class="string">'73a23c51f8487cfcd7c6deec96ccc7543960d350'</span></span><br><span class="line">INFO  Install dependencies</span><br><span class="line">npm notice created a lockfile as package-lock.json. You should commit this file.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\nunjucks\node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@1.2.9: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.1 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@2.1.1: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line"></span><br><span class="line">added 362 packages from 470 contributors and audited 2622 packages <span class="keyword">in</span> 30.858s</span><br><span class="line">found 0 vulnerabilities</span><br><span class="line"></span><br><span class="line">INFO  Start blogging with Hexo!</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace</span><br><span class="line">$ <span class="built_in">cd</span> fall-moon.github.io/</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ npm install</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.1 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@2.1.1: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\nunjucks\node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@1.2.9: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line"></span><br><span class="line">audited 2622 packages <span class="keyword">in</span> 5.543s</span><br><span class="line">found 0 vulnerabilities</span><br></pre></td></tr></table></figure>
-
-<h3 id="生成静态页面并预览"><a href="#生成静态页面并预览" class="headerlink" title="生成静态页面并预览"></a>生成静态页面并预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ hexo clean</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded <span class="keyword">in</span> 154 ms</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.css</span><br><span class="line">INFO  Generated: fancybox/blank.gif</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.pack.js</span><br><span class="line">INFO  Generated: fancybox/jquery.fancybox.js</span><br><span class="line">INFO  Generated: fancybox/fancybox_sprite.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_sprite@2x.png</span><br><span class="line">INFO  Generated: fancybox/fancybox_loading@2x.gif</span><br><span class="line">INFO  Generated: fancybox/fancybox_overlay.png</span><br><span class="line">INFO  Generated: archives/2019/index.html</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.woff</span><br><span class="line">INFO  Generated: archives/2019/11/index.html</span><br><span class="line">INFO  Generated: js/script.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-media.js</span><br><span class="line">INFO  Generated: css/style.css</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.js</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-thumbs.css</span><br><span class="line">INFO  Generated: fancybox/fancybox_loading.gif</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: fancybox/helpers/jquery.fancybox-buttons.css</span><br><span class="line">INFO  Generated: css/fonts/FontAwesome.otf</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.svg</span><br><span class="line">INFO  Generated: fancybox/helpers/fancybox_buttons.png</span><br><span class="line">INFO  Generated: css/fonts/fontawesome-webfont.ttf</span><br><span class="line">INFO  Generated: 2019/11/08/hello-world/index.html</span><br><span class="line">INFO  Generated: css/images/banner.jpg</span><br><span class="line">INFO  28 files generated <span class="keyword">in</span> 540 ms</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<h3 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</span><br><span class="line">Cloning into <span class="string">'themes/next'</span>...</span><br><span class="line">remote: Enumerating objects: 12037, <span class="keyword">done</span>.</span><br><span class="line">remote: Total 12037 (delta 0), reused 0 (delta 0), pack-reused 12037</span><br><span class="line">Receiving objects: 100% (12037/12037), 13.05 MiB | 90.00 KiB/s, <span class="keyword">done</span>.</span><br><span class="line">Resolving deltas: 100% (6966/6966), <span class="keyword">done</span>.</span><br><span class="line">Checking connectivity... <span class="keyword">done</span>.</span><br></pre></td></tr></table></figure>
-
-<p>运行主题并且预览</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ hexo clean</span><br><span class="line">INFO  Deleted database.</span><br><span class="line">INFO  Deleted public folder.</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN  ========================= ATTENTION! ==========================</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN   NexT repository is moving here: https://github.com/theme-next</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">WARN   It<span class="string">'s rebase to v6.0.0 and future maintenance will resume there</span></span><br><span class="line"><span class="string">WARN  ===============================================================</span></span><br><span class="line"><span class="string">INFO  Files loaded in 506 ms</span></span><br><span class="line"><span class="string">INFO  Generated: index.html</span></span><br><span class="line"><span class="string">INFO  Generated: images/avatar.gif</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by-nc-nd.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/algolia_logo.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/apple-touch-icon-next.png</span></span><br><span class="line"><span class="string">INFO  Generated: archives/index.html</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by-nc-sa.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/loading.gif</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by-nd.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/favicon-16x16-next.png</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by-nc.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/placeholder.gif</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-zero.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/logo.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/cc-by-sa.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/quote-l.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/quote-r.svg</span></span><br><span class="line"><span class="string">INFO  Generated: images/favicon-32x32-next.png</span></span><br><span class="line"><span class="string">INFO  Generated: images/searchicon.png</span></span><br><span class="line"><span class="string">INFO  Generated: archives/2019/11/index.html</span></span><br><span class="line"><span class="string">INFO  Generated: archives/2019/index.html</span></span><br><span class="line"><span class="string">INFO  Generated: css/main.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fastclick/LICENSE</span></span><br><span class="line"><span class="string">INFO  Generated: lib/algolia-instant-search/instantsearch.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/needsharebutton/needsharebutton.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/bower.json</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fastclick/bower.json</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery_lazyload/bower.json</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery_lazyload/jquery.scrollstop.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-big-counter.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery_lazyload/jquery.lazyload.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-barber-shop.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-center-circle.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-center-atom.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-center-radar.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-flash.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-fill-left.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-center-simple.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-corner-indicator.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/velocity/bower.json</span></span><br><span class="line"><span class="string">INFO  Generated: lib/velocity/velocity.ui.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-bounce.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-loading-bar.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-mac-osx.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fastclick/README.html</span></span><br><span class="line"><span class="string">INFO  Generated: lib/pace/pace-theme-minimal.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery_lazyload/README.html</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery_lazyload/CONTRIBUTING.html</span></span><br><span class="line"><span class="string">INFO  Generated: lib/needsharebutton/needsharebutton.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/three/canvas_lines.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/velocity/velocity.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/needsharebutton/font-embedded.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/three/three-waves.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/three/canvas_sphere.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/jquery/index.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.woff2</span></span><br><span class="line"><span class="string">INFO  Generated: lib/velocity/velocity.ui.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/affix.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/velocity/velocity.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/HELP-US-OUT.txt</span></span><br><span class="line"><span class="string">INFO  Generated: lib/three/three.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/algolia-instant-search/instantsearch.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/canvas-nest/canvas-nest.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/canvas-ribbon/canvas-ribbon.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/bootstrap.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/hook-duoshuo.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/algolia-search.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/exturl.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/post-details.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/js.cookie.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/scroll-cookie.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.woff</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/utils.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/motion.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/scrollspy.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/font/han-space.otf</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/fancybox_buttons.png</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/blank.gif</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/fancybox_loading.gif</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/fancybox_overlay.png</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/fancybox_sprite.png</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/font/han-space.woff</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/font/han.woff2</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/fancybox_sprite@2x.png</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/font/han.woff</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/fancybox_loading@2x.gif</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/font/han.otf</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/css/font-awesome.css.map</span></span><br><span class="line"><span class="string">INFO  Generated: 2019/11/08/hello-world/index.html</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/jquery.fancybox.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fastclick/lib/fastclick.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: js/src/schemes/pisces.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/ua-parser-js/dist/ua-parser.pack.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/han.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/ua-parser-js/dist/ua-parser.min.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-media.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/jquery.fancybox.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-buttons.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/han.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fastclick/lib/fastclick.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-thumbs.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/jquery.fancybox.pack.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/css/font-awesome.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/han.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/Han/dist/han.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-buttons.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/css/font-awesome.min.css</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.ttf</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.eot</span></span><br><span class="line"><span class="string">INFO  Generated: lib/fancybox/source/helpers/jquery.fancybox-thumbs.js</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/FontAwesome.otf</span></span><br><span class="line"><span class="string">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.svg</span></span><br><span class="line"><span class="string">INFO  114 files generated in 1.82 s</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span></span><br><span class="line"><span class="string">$ hexo s</span></span><br><span class="line"><span class="string">INFO  Start processing</span></span><br><span class="line"><span class="string">WARN  ===============================================================</span></span><br><span class="line"><span class="string">WARN  ========================= ATTENTION! ==========================</span></span><br><span class="line"><span class="string">WARN  ===============================================================</span></span><br><span class="line"><span class="string">WARN   NexT repository is moving here: https://github.com/theme-next</span></span><br><span class="line"><span class="string">WARN  ===============================================================</span></span><br><span class="line"><span class="string">WARN   It'</span>s rebase to v6.0.0 and future maintenance will resume there</span><br><span class="line">WARN  ===============================================================</span><br><span class="line">INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
-
-<h2 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.1 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@2.1.1: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules\nunjucks\node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@1.2.9: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"x64"</span>&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-deployer-git@2.0.0</span><br><span class="line">added 1 package from 1 contributor and audited 2697 packages <span class="keyword">in</span> 5.165s</span><br><span class="line">found 0 vulnerabilities</span><br></pre></td></tr></table></figure>
-
-<h3 id="配置用户名和SSH-SSH目录：C-Users-chenmo5410-ssh"><a href="#配置用户名和SSH-SSH目录：C-Users-chenmo5410-ssh" class="headerlink" title="配置用户名和SSH(SSH目录：C:\Users\chenmo5410.ssh)"></a>配置用户名和SSH(SSH目录：C:\Users\chenmo5410.ssh)</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ git config --global user.name <span class="string">"fall-moon"</span></span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ -EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">bash: -EB84JKE: <span class="built_in">command</span> not found</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ $</span><br><span class="line">bash: $: <span class="built_in">command</span> not found</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ git config --global user.email <span class="string">"735933358@qq.com"</span></span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 /d/HexoSpace/fall-moon.github.io</span><br><span class="line">$ <span class="built_in">cd</span> ~/. ssh</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-EB84JKE MINGW64 ~</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"735933358@qq.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/chenmo5410/.ssh/id_rsa):</span><br><span class="line">Created directory <span class="string">'/c/Users/chenmo5410/.ssh'</span>.</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/chenmo5410/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/chenmo5410/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:oK5o0JnofCdz+hzz2BJU6zzX1RjSUK89tXCzqEibnJU 735933358@qq.com</span><br><span class="line">The key<span class="string">'s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 2048]----+</span></span><br><span class="line"><span class="string">|           .+.   |</span></span><br><span class="line"><span class="string">|       .   . o.  |</span></span><br><span class="line"><span class="string">|      o .   ..++.|</span></span><br><span class="line"><span class="string">|     o o    .o*.=|</span></span><br><span class="line"><span class="string">| o oo o S..E.o = |</span></span><br><span class="line"><span class="string">|o +. . +o.*..   .|</span></span><br><span class="line"><span class="string">|+   .o. o* .     |</span></span><br><span class="line"><span class="string">| = =.+*          |</span></span><br><span class="line"><span class="string">|o o.B+.o         |</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chenmo5410@DESKTOP-EB84JKE MINGW64 ~</span></span><br><span class="line"><span class="string">$ ssh -T git@github.com</span></span><br><span class="line"><span class="string">The authenticity of host '</span>github.com (13.250.177.223)<span class="string">' can'</span>t be established.</span><br><span class="line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want to <span class="built_in">continue</span> connecting (yes/no)? yes</span><br><span class="line">Warning: Permanently added <span class="string">'github.com,13.250.177.223'</span> (RSA) to the list of known hosts.</span><br><span class="line">Hi fall-moon! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="同步数据"><a href="#同步数据" class="headerlink" title="同步数据"></a>同步数据</h3><p>使用命令</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>在github对应仓库的settings中找到GitHub Pages</p>
-<p>将默认的branch修改为同步数据的branch</p>
-<p>可以通过username.github.io进行访问</p>
-
-            
-        </article>
-    </div>
-    
-    <div class="nexmoe-post">
-        <a href="/2019/11/08/hello-world/">
-            <div class="nexmoe-post-cover mdui-ripple"> 
-                
-                    <img src="https://i.loli.net/2019/01/13/5c3aec85a4343.jpg" alt="Hello World">
-                
-                <h1>Hello World</h1>
-            </div>
-        </a>
-        <div class="nexmoe-post-meta">
-            <a><i class="nexmoefont icon-calendar-fill"></i>2019年11月08日</a>
-            <a><i class="nexmoefont icon-areachart"></i>73 字</a>
-            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
-            
-            
-        </div>
-        <article>
-            
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-            
-        </article>
-    </div>
-    
-</section>
-
+          </ul>
+          <div class="post-info">
+            <span>
+              
+              <i class="fa fa-folder-open"></i> Uncategorized
+              
+            </span>
+            <span><i class="fa fa-tag"></i> 0 </span>
+            <span>Published {{moment(1573184917361).fromNow()}}</span>
+          </div>
+        </li>
+        
+      </ul>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
- 
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</div>
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <div class="clearfix">
+    <a href="http://yoursite.com" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li>© 2019 Fallmoon</li>
+      <li><a href="http://yoursite.com">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+    </div>
+    </div>
+    
+  </footer>
+</div>
 
 
- 
-    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-for-websites@1.4.9/SmoothScroll.min.js"></script>
 
 
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-
-<script src="/js/app.js?v=1573451230597"></script>
-<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
-
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
-
-
-
-  
-
-
-
-
+<script src="/js/main.js"></script>
 
 </body>
-
 </html>
