@@ -87,8 +87,10 @@
 <meta property="og:site_name" content="奇奇怪怪的学习笔记">
 <meta property="og:description" content="Docker Toolbox 安装 下载Docker Toolbox安装包 在win10下安装，由于需要运行VMware等程序，关闭win10下的hyper-v功能并确定CPU虚拟化支持 安装Docker Toolbox至自定义目录 添加环境变量MACHINE_STORAGE_PATH，值为D:\VirtualBoxSpace\.docker\machine可自定义 注：在添加环境变量后，需要在对">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-11T05:29:21.667Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
+<meta property="og:updated_time" content="2019-11-11T08:51:24.403Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
 
 
 
@@ -324,7 +326,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1k
+                  989
                 </span>
               
 
@@ -369,81 +371,49 @@
 <li>注：在添加环境变量后，需要在对应目录下新建cache文件夹，将boot2docker.iso复制进cache文件夹</li>
 </ul>
 <p>打开Docker Quickstart</p>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">Creating CA: D:\VirtualBoxSpace\.docker\machine\certs\ca.pem</span><br><span class="line">Creating client certificate: D:\VirtualBoxSpace\.docker\machine\certs\cert.pem</span><br><span class="line">Running pre-create checks...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">Creating machine...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">(default) Copying D:\VirtualBoxSpace\.docker\machine\cache\boot2docker.iso to D:\VirtualBoxSpace\.docker\machine\machines\default\boot2docker.iso...</span><br><span class="line">(default) Creating VirtualBox VM...</span><br><span class="line">(default) Creating SSH key...</span><br><span class="line">(default) Starting the VM...</span><br><span class="line">(default) Check network to re-create if needed...</span><br><span class="line">(default) Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.</span><br><span class="line">(default) Waiting for an IP...</span><br><span class="line">Waiting for machine to be running, this may take a few minutes...</span><br><span class="line">Detecting operating system of created instance...</span><br><span class="line">Waiting for SSH to be available...</span><br><span class="line">Detecting the provisioner...</span><br><span class="line">Provisioning with boot2docker...</span><br><span class="line">Copying certs to the local machine directory...</span><br><span class="line">Copying certs to the remote machine...</span><br><span class="line">Setting Docker configuration on the remote daemon...</span><br><span class="line">Checking connection to Docker...</span><br><span class="line">Docker is up and running!</span><br><span class="line">To see how to connect your Docker Client to the Docker Engine running on this virtual machine, <span class="keyword">run</span><span class="bash">: C:\Program_self\Docker Toolbox\docker-machine.exe env default</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                        <span class="comment">##         .</span></span><br><span class="line">                  <span class="comment">## ## ##        ==</span></span><br><span class="line">               <span class="comment">## ## ## ## ##    ===</span></span><br><span class="line">           /<span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">"\___/ ===</span></span><br><span class="line"><span class="string">      ~~~ &#123;~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===-</span></span><br></pre></td></tr></table></figure>
-<pre><code>\______ o           __/
-  \    \         __/
-   \____\_______/</code></pre><p>docker is configured to use the default machine with IP 192.168.99.100<br>For help getting started, check out the docs at <a href="https://docs.docker.com" target="_blank" rel="noopener">https://docs.docker.com</a></p>
-<p>Start interactive shell</p>
-<p>chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox<br>$</p>
-<pre><code>
-run hello-world
+<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">Creating CA: D:\VirtualBoxSpace\.docker\machine\certs\ca.pem</span><br><span class="line">Creating client certificate: D:\VirtualBoxSpace\.docker\machine\certs\cert.pem</span><br><span class="line">Running pre-create checks...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">Creating machine...</span><br><span class="line">(default) Unable to get the latest Boot2Docker ISO release version:  Get https://api.github.com/repos/boot2docker/boot2docker/releases/latest: dial tcp: lookup api.github.com: no such host</span><br><span class="line">(default) Copying D:\VirtualBoxSpace\.docker\machine\cache\boot2docker.iso to D:\VirtualBoxSpace\.docker\machine\machines\default\boot2docker.iso...</span><br><span class="line">(default) Creating VirtualBox VM...</span><br><span class="line">(default) Creating SSH key...</span><br><span class="line">(default) Starting the VM...</span><br><span class="line">(default) Check network to re-create if needed...</span><br><span class="line">(default) Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.</span><br><span class="line">(default) Waiting for an IP...</span><br><span class="line">Waiting for machine to be running, this may take a few minutes...</span><br><span class="line">Detecting operating system of created instance...</span><br><span class="line">Waiting for SSH to be available...</span><br><span class="line">Detecting the provisioner...</span><br><span class="line">Provisioning with boot2docker...</span><br><span class="line">Copying certs to the local machine directory...</span><br><span class="line">Copying certs to the remote machine...</span><br><span class="line">Setting Docker configuration on the remote daemon...</span><br><span class="line">Checking connection to Docker...</span><br><span class="line">Docker is up and running!</span><br><span class="line">To see how to connect your Docker Client to the Docker Engine running on this virtual machine, <span class="keyword">run</span><span class="bash">: C:\Program_self\Docker Toolbox\docker-machine.exe env default</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">                        <span class="comment">##         .</span></span><br><span class="line">                  <span class="comment">## ## ##        ==</span></span><br><span class="line">               <span class="comment">## ## ## ## ##    ===</span></span><br><span class="line">           /<span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">""</span><span class="string">"\___/ ===</span></span><br><span class="line"><span class="string">           \______ o           __/</span></span><br><span class="line"><span class="string">             \    \         __/</span></span><br><span class="line"><span class="string">              \____\_______/</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">docker is configured to use the default machine with IP 192.168.99.100</span></span><br><span class="line"><span class="string">For help getting started, check out the docs at https://docs.docker.com</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">Start interactive shell</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run hello-world</span><br><span class="line">Unable to find image <span class="string">'hello-world:latest'</span> locally</span><br><span class="line">latest: Pulling from library/hello-world</span><br><span class="line">1b930d010525: Pull complete</span><br><span class="line">Digest: sha256:c3b4ada4687bbaa170745b3e4dd8ac3f194ca95b2d0518b417fb47e5879d9b5f</span><br><span class="line">Status: Downloaded newer image <span class="keyword">for</span> hello-world:latest</span><br><span class="line"></span><br><span class="line">Hello from Docker!</span><br><span class="line">This message shows that your installation appears to be working correctly.</span><br><span class="line"></span><br><span class="line">To generate this message, Docker took the following steps:</span><br><span class="line"> 1. The Docker client contacted the Docker daemon.</span><br><span class="line"> 2. The Docker daemon pulled the <span class="string">"hello-world"</span> image from the Docker Hub.</span><br><span class="line">    (amd64)</span><br><span class="line"> 3. The Docker daemon created a new container from that image <span class="built_in">which</span> runs the</span><br><span class="line">    executable that produces the output you are currently reading.</span><br><span class="line"> 4. The Docker daemon streamed that output to the Docker client, <span class="built_in">which</span> sent it</span><br><span class="line">    to your terminal.</span><br><span class="line"></span><br><span class="line">To try something more ambitious, you can run an Ubuntu container with:</span><br><span class="line"> $ docker run -it ubuntu bash</span><br><span class="line"></span><br><span class="line">Share images, automate workflows, and more with a free Docker ID:</span><br><span class="line"> https://hub.docker.com/</span><br><span class="line"></span><br><span class="line">For more examples and ideas, visit:</span><br><span class="line"> https://docs.docker.com/get-started/</span><br></pre></td></tr></table></figure>
 
-查看容器
 
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">run hello-world</span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run hello-world</span><br><span class="line">Unable to find image <span class="string">'hello-world:latest'</span> locally</span><br><span class="line">latest: Pulling from library/hello-world</span><br><span class="line">1b930d010525: Pull complete</span><br><span class="line">Digest: sha256:c3b4ada4687bbaa170745b3e4dd8ac3f194ca95b2d0518b417fb47e5879d9b5f</span><br><span class="line">Status: Downloaded newer image <span class="keyword">for</span> hello-world:latest</span><br><span class="line"></span><br><span class="line">Hello from Docker!</span><br><span class="line">This message shows that your installation appears to be working correctly.</span><br><span class="line"></span><br><span class="line">To generate this message, Docker took the following steps:</span><br><span class="line"> 1. The Docker client contacted the Docker daemon.</span><br><span class="line"> 2. The Docker daemon pulled the <span class="string">"hello-world"</span> image from the Docker Hub.</span><br><span class="line">    (amd64)</span><br><span class="line"> 3. The Docker daemon created a new container from that image <span class="built_in">which</span> runs the</span><br><span class="line">    executable that produces the output you are currently reading.</span><br><span class="line"> 4. The Docker daemon streamed that output to the Docker client, <span class="built_in">which</span> sent it</span><br><span class="line">    to your terminal.</span><br><span class="line"></span><br><span class="line">To try something more ambitious, you can run an Ubuntu container with:</span><br><span class="line"> $ docker run -it ubuntu bash</span><br><span class="line"></span><br><span class="line">Share images, automate workflows, and more with a free Docker ID:</span><br><span class="line"> https://hub.docker.com/</span><br><span class="line"></span><br><span class="line">For more examples and ideas, visit:</span><br><span class="line"> https://docs.docker.com/get-started/</span><br></pre></td></tr></table></figure>
+
+<p>查看容器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker image ls</span><br><span class="line">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE</span><br><span class="line">hello-world         latest              fce289e99eb9        10 months ago       1.84kB</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker container ls --all</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                          PORTS               NAMES</span><br><span class="line">a21f5e9f52f6        hello-world         <span class="string">"/hello"</span>            About a minute ago   Exited (0) About a minute ago                       dreamy_jennings</span><br></pre></td></tr></table></figure>
 
-#### 常用命令
-
-查看容器
-
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><p>查看容器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker image ls</span><br><span class="line">docker container ls</span><br></pre></td></tr></table></figure>
 
-停用容器
-
+<p>停用容器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker container stop [container_name]</span><br></pre></td></tr></table></figure>
 
-删除容器
-
+<p>删除容器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker container rm [container_name]</span><br></pre></td></tr></table></figure>
 
-#### nginx相关
-
-* Nginx服务调用
-
+<h4 id="nginx相关"><a href="#nginx相关" class="headerlink" title="nginx相关"></a>nginx相关</h4><ul>
+<li>Nginx服务调用</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run --name nginx -p 8080:80 -d nginx</span><br></pre></td></tr></table></figure>
 
-由于docker工作在192.168.99.100下
-
-所以在访问Nginx时，无法访问127.0.0.1:8080
-
-需要访问192.168.99.100：8080
-
-* 访问容器
-
+<p>由于docker工作在192.168.99.100下</p>
+<p>所以在访问Nginx时，无法访问127.0.0.1:8080</p>
+<p>需要访问192.168.99.100：8080</p>
+<ul>
+<li>访问容器</li>
+</ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker ps</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES</span><br><span class="line">5303d5179816        nginx               <span class="string">"nginx -g 'daemon of…"</span>   3 minutes ago       Up 3 minutes        0.0.0.0:8080-&gt;80/tcp   nginx</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker attach 5303d5179816</span><br><span class="line">192.168.99.1 - - [29/Oct/2019:03:45:15 +0000] <span class="string">"GET / HTTP/1.1"</span> 304 0 <span class="string">"-"</span> <span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36"</span> <span class="string">"-"</span></span><br></pre></td></tr></table></figure>
 
-当多个窗口同时使用该命令进入该容器时，所有的窗口都会同步显示。如果有一个窗口阻塞了，那么其他窗口也无法再进行操作。 
-
-
-
-### mysql操作
-
-#### 安装
-
-在docker中`docker pull mysql`下载mysql镜像
-
-使用如下命令进行服务启动，默认使用3306端口，密码为123456的root用户
-
+<p>当多个窗口同时使用该命令进入该容器时，所有的窗口都会同步显示。如果有一个窗口阻塞了，那么其他窗口也无法再进行操作。 </p>
+<h3 id="mysql操作"><a href="#mysql操作" class="headerlink" title="mysql操作"></a>mysql操作</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>在docker中<code>docker pull mysql</code>下载mysql镜像</p>
+<p>使用如下命令进行服务启动，默认使用3306端口，密码为123456的root用户</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run --name first-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql</span><br><span class="line">ad017dcb454327858fec7b47ac93b3f99e8f3d76d9cce266edab88419c07e325</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker container ls</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES</span><br><span class="line">ad017dcb4543        mysql               <span class="string">"docker-entrypoint.s…"</span>   2 hours ago         Up 6 seconds        0.0.0.0:3306-&gt;3306/tcp, 33060/tcp   first-mysql</span><br><span class="line">5303d5179816        nginx               <span class="string">"nginx -g 'daemon of…"</span>   26 hours ago        Up 24 hours         0.0.0.0:8080-&gt;80/tcp                nginx</span><br></pre></td></tr></table></figure>
 
-#### DataGrip连接mySQL
+<h4 id="DataGrip连接mySQL"><a href="#DataGrip连接mySQL" class="headerlink" title="DataGrip连接mySQL"></a>DataGrip连接mySQL</h4><p>在DG中新建数据库连接，并且使用如下配置进行连接</p>
+<p><img src="/2019/11/11/Docker%E5%AE%89%E8%A3%85/image-20191030140615359.png" alt="image-20191030140615359"></p>
+<h4 id="SQL常用操作命令"><a href="#SQL常用操作命令" class="headerlink" title="SQL常用操作命令"></a>SQL常用操作命令</h4><p>CREAT DATABASES  【数据库名】</p>
+<p>SHOW DATABASES</p>
+<p>USE 【数据库名】</p>
+<p>SHOW TABLES</p>
 
-在DG中新建数据库连接，并且使用如下配置进行连接
-
-![image-20191030140615359](image-20191030140615359.png)
-
-#### SQL常用操作命令
-
-CREAT DATABASES  【数据库名】
-
-SHOW DATABASES
-
-USE 【数据库名】
-
-SHOW TABLES
-</code></pre>
       
     </div>
     
@@ -633,7 +603,7 @@ SHOW TABLES
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Toolbox-安装"><span class="nav-number">1.</span> <span class="nav-text">Docker Toolbox 安装</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Docker-Toolbox-安装"><span class="nav-number">1.</span> <span class="nav-text">Docker Toolbox 安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常用命令"><span class="nav-number">1.1.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#nginx相关"><span class="nav-number">1.2.</span> <span class="nav-text">nginx相关</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql操作"><span class="nav-number">2.</span> <span class="nav-text">mysql操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DataGrip连接mySQL"><span class="nav-number">2.2.</span> <span class="nav-text">DataGrip连接mySQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SQL常用操作命令"><span class="nav-number">2.3.</span> <span class="nav-text">SQL常用操作命令</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -672,7 +642,7 @@ SHOW TABLES
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 提供支持</div>
 
 
 
