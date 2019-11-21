@@ -83,14 +83,14 @@
 <meta name="keywords" content="docker,环境搭建">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker安装">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;index.html">
 <meta property="og:site_name" content="奇奇怪怪的学习笔记">
 <meta property="og:description" content="Docker Toolbox 安装 下载Docker Toolbox安装包 在win10下安装，由于需要运行VMware等程序，关闭win10下的hyper-v功能并确定CPU虚拟化支持 安装Docker Toolbox至自定义目录 添加环境变量MACHINE_STORAGE_PATH，值为D:\VirtualBoxSpace\.docker\machine可自定义 注：在添加环境变量后，需要在对">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
 <meta property="og:updated_time" content="2019-11-11T08:51:24.403Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;11&#x2F;%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85&#x2F;Docker%E5%AE%89%E8%A3%85&#x2F;image-20191030140615359.png">
 
 
 
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/11/11/Docker安装/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/11/11/环境安装/Docker安装/"/>
 
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/Docker%E5%AE%89%E8%A3%85/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/Docker%E5%AE%89%E8%A3%85/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Fallmoon">
@@ -408,7 +408,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker run --name first-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql</span><br><span class="line">ad017dcb454327858fec7b47ac93b3f99e8f3d76d9cce266edab88419c07e325</span><br><span class="line"></span><br><span class="line">chenmo5410@DESKTOP-UIBVSR2 MINGW64 /c/Program_self/Docker Toolbox</span><br><span class="line">$ docker container ls</span><br><span class="line">CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                               NAMES</span><br><span class="line">ad017dcb4543        mysql               <span class="string">"docker-entrypoint.s…"</span>   2 hours ago         Up 6 seconds        0.0.0.0:3306-&gt;3306/tcp, 33060/tcp   first-mysql</span><br><span class="line">5303d5179816        nginx               <span class="string">"nginx -g 'daemon of…"</span>   26 hours ago        Up 24 hours         0.0.0.0:8080-&gt;80/tcp                nginx</span><br></pre></td></tr></table></figure>
 
 <h4 id="DataGrip连接mySQL"><a href="#DataGrip连接mySQL" class="headerlink" title="DataGrip连接mySQL"></a>DataGrip连接mySQL</h4><p>在DG中新建数据库连接，并且使用如下配置进行连接</p>
-<p><img src="/2019/11/11/Docker%E5%AE%89%E8%A3%85/image-20191030140615359.png" alt="image-20191030140615359"></p>
+<p><img src="/2019/11/11/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/Docker%E5%AE%89%E8%A3%85/image-20191030140615359.png" alt="image-20191030140615359"></p>
 <h4 id="SQL常用操作命令"><a href="#SQL常用操作命令" class="headerlink" title="SQL常用操作命令"></a>SQL常用操作命令</h4><p>CREAT DATABASES  【数据库名】</p>
 <p>SHOW DATABASES</p>
 <p>USE 【数据库名】</p>
@@ -445,7 +445,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/11/08/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="next" title="博客搭建">
+              <a href="/2019/11/08/%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="next" title="博客搭建">
                 <i class="fa fa-chevron-left"></i> 博客搭建
               </a>
             
@@ -549,7 +549,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -637,7 +637,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">17.8k</span>
+    <span title="Site words total count">17.9k</span>
   
 </div>
 
